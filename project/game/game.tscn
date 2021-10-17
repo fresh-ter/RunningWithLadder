@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://game/objects/platform/platform.tscn" type="PackedScene" id=1]
+[ext_resource path="res://game/scripts/game.gd" type="Script" id=2]
+[ext_resource path="res://game/units/player/player.tscn" type="PackedScene" id=3]
+
+[node name="Game" type="Node"]
+script = ExtResource( 2 )
+
+[node name="Platform" parent="." instance=ExtResource( 1 )]
+position = Vector2( 456.367, 545.002 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 458.826, 133.173 )
